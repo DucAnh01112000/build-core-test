@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class HttpRequestClientFactory {
     private static ThreadLocal<Response> response = new ThreadLocal<>();
     private static String baseUrl;
-    private Response getResponse(){
+    public Response getResponse(){
         return response.get();
     }
     public void setResponse(Response res){
