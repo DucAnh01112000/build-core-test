@@ -17,5 +17,6 @@ public class TokenTest extends BaseTest {
         tokenSteps.getToken(tokenId)
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponse(TokenModel.class);
+        System.out.println("fffffff");
     }
 }
