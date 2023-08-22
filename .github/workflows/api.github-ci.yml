@@ -7,6 +7,7 @@
 # documentation.
 
 name: Java CI with Maven
+run-name: Running on ${{ github.ref_name }} by ${{ github.actor }}
 
 on:
 #  push:
@@ -19,7 +20,7 @@ on:
   schedule:
     - cron: "00 1 * * *"
   workflow_dispatch:
-    input:
+    inputs:
       api-group:
         description: API_GROUP
 
