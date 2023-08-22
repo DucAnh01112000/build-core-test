@@ -9,7 +9,11 @@
 name: Java CI with Maven
 
 on:
+
   push:
+    path:
+      - '!README.md'
+      - '**.java'
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
