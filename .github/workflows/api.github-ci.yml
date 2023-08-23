@@ -36,10 +36,10 @@ jobs:
         with:
           java-version: '8'
           server-id: github # value of repository/id field of the pom.xml
-          server-username: GITHUB_USER_REF  # env variable name for username
-          server-password: GITHUB_TOKEN_REF # env variable name for GitHub Personal Access Token
-          distribution: 'temurin'
-          cache: maven
+#          server-username: GITHUB_USER_REF  # env variable name for username
+#          server-password: GITHUB_TOKEN_REF # env variable name for GitHub Personal Access Token
+#          distribution: 'temurin'
+#          cache: maven
 
       - name: Build with Maven
         run: mvn -B -Pgithub package --file pom.xml
