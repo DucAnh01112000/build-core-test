@@ -19,10 +19,12 @@ run-name: Running on ${{ github.ref_name }} by ${{ github.actor }}
 on:
   schedule:
     - cron: "00 18 * * *"
-  workflow_dispatch:
-    inputs:
-      api-group:
-        description: API_GROUP
+  pull-request:
+    branch: ["main"]
+#  workflow_dispatch:
+#    inputs:
+#      api-group:
+#        description: API_GROUP
 
 jobs:
   build:
