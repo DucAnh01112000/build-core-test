@@ -13,10 +13,9 @@ public class TokenTest extends BaseTest {
 
     @Test(description = "get a token with tokenid", groups = {"token"})
     public void getToken(){
-//        TokenModel tokenModel = (TokenModel)
-//        tokenSteps.getToken(tokenId)
-//                .validateResponse(HttpURLConnection.HTTP_OK)
-//                .saveResponse(TokenModel.class);
-        System.out.println("1234ksdjfklaskldj");
+        TokenModel tokenModel = (TokenModel)
+        tokenSteps.getToken(tokenId)
+                .validateResponse(HttpURLConnection.HTTP_OK)
+                .saveResponse(TokenModel.class);
     }
 }
