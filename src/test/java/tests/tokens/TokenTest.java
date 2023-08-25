@@ -18,6 +18,6 @@ public class TokenTest extends BaseTest {
 //                .validateResponse(HttpURLConnection.HTTP_OK)
 //                .saveResponse(TokenModel.class);
 //        tokenSteps.verifyToken(tokenModel, "asset");
-        System.out.println("this test is get token with token id");
+        System.out.println("ci cd master");
     }
 }
