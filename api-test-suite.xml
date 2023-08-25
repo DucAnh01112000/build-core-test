@@ -33,6 +33,7 @@
         </method-selectors>
         <classes>
             <class name="tests.tokens.TokenTest"/>
+            <class name="tests.stake.StakeTests"/>
         </classes>
     </test>
 </suite>
