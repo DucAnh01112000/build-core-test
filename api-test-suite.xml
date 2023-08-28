@@ -26,7 +26,7 @@
                             flag = true;
                         }
                     }
-                    flag;
+<!--                    flag;-->
                 ]]>
                 </script>
             </method-selector>
