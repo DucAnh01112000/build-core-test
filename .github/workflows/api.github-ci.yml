@@ -43,6 +43,7 @@ jobs:
 
       - name: Run test
         run: mvn test "-DcardanoAPI.group=${{github.event.inputs.api-group}}"
+        command: echo “alo alo <<cardanoAPI.group>>”
 
       - name: Get Allure history
         uses: actions/checkout@v2
