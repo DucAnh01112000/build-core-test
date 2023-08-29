@@ -42,7 +42,7 @@ jobs:
 #          GITHUB_TOKEN: ${{secrets.GH_PACKAGE_REPO_PASSWORD}}
 
       - name: Run Test
-        mvn test "-DcardanoAPI.group=${{github.even.input.api-group}}"
+        run: mvn test "-DcardanoAPI.group=${{github.even.input.api-group}}"
 
       - name: Get Allure History
           uses: actions/checkout@v2
