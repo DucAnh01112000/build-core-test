@@ -88,9 +88,9 @@
                 <version>${maven-surefire-plugin-version}</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+<!--                    <argLine>-->
+<!--                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+<!--                    </argLine>-->
                     <suiteXmlFiles>
                         <!-- pass testng.xml files as argument from command line -->
                         <suiteXmlFile>${defaultSuiteFiles}</suiteXmlFile>

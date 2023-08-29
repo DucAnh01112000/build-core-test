@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Cardano Regression Suite" configfailurepolicy="continue" verbose="1" parallel="classes" thread-count="5">
+<suite name="Suite CardanoAPI" thread-count="5" verbose="1" parallel="classes" configfailurepolicy="continue">
     <parameter name="env" value="mainnet"/>
-    <test name="Cardano API test ">
+    <test name="Test CardanoAPI">
         <method-selectors>
             <method-selector>
                 <script language="beanshell">
                     <![CDATA[
-                    import java.util.ArrayList;
+                        import java.util.ArrayList;
+                        String whatGroups = System.getProperty("cardanoAPI.group")
 
-                    String whatGroup = System.getProperty("cardanoAPI.group");
-
-                    if (whatGroup.isEmpty()) {
-                        return true;
-                    }
-
-                    if (!whatGroup.contains(",")) {
-                        return groups.containsKey(whatGroup);
-                    }
-                    String[] whatGroups = whatGroup.split(",");
-
-                    boolean flag = false;
-                    for (String eachGroup: whatGroups) {
-                        if (groups.containsKey(eachGroup.trim())) {
-                            flag = true;
+                        if(whatGroups.isEmpty()){
+                            return true;
                         }
-                    }
-<!--                    flag;-->
-                ]]>
+                        if(!whatGroups.contains(","){
+                           groups.containsKey(whatGroups)
+                        }
+                        String[] groupsList = whatGroups.split(",");
+
+                        boolean flag = false;
+                        for(String eachGroup : groupsList){
+                            if(group.containsKey(eachGroup.trim()){
+                                flag = true;
+                            }
+                        }
+                        flag;
+                    ]]>
                 </script>
             </method-selector>
         </method-selectors>
