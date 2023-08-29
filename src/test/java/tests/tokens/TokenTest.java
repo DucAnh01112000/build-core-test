@@ -1,11 +1,8 @@
 package tests.tokens;
 
 import base.BaseTest;
-import microservices.models.TokenModel;
-import microservices.steps.TokenSteps;
+import microservices.tokens.steps.TokenSteps;
 import org.testng.annotations.Test;
-
-import java.net.HttpURLConnection;
 
 public class TokenTest extends BaseTest {
     private TokenSteps tokenSteps = new TokenSteps();
