@@ -10,7 +10,7 @@ run-name: Running on ${{github.ref.name}} by ${{github.actor}}
 
 on:
   schedule:
-    -cron: " 00 08 * * *"
+  - cron: " 00 08 * * *"
 #  push:
 #    branches: ["main"]
 #  pull-requests:
