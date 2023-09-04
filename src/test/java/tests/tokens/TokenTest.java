@@ -1,8 +1,11 @@
 package tests.tokens;
 
 import base.BaseTest;
+import microservices.tokens.models.TokenModel;
 import microservices.tokens.steps.TokenSteps;
 import org.testng.annotations.Test;
+
+import java.net.HttpURLConnection;
 
 public class TokenTest extends BaseTest {
     private TokenSteps tokenSteps = new TokenSteps();
@@ -10,11 +13,11 @@ public class TokenTest extends BaseTest {
 
     @Test(description = "get a token with token id", groups = {"token"})
     public void getToken(){
-//        TokenModel tokenModel = (TokenModel)
-//        tokenSteps.getToken(tokenId)
-//                .validateResponse(HttpURLConnection.HTTP_OK)
-//                .saveResponse(TokenModel.class);
-//        tokenSteps.verifyToken(tokenModel, "asset");
+        TokenModel tokenModel = (TokenModel)
+        tokenSteps.getToken(tokenId)
+                .validateResponse(HttpURLConnection.HTTP_OK)
+                .saveResponse(TokenModel.class);
+        tokenSteps.verifyToken(tokenModel, "asset");
         System.out.println("ci cd master");
     }
 }
