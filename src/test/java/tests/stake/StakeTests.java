@@ -17,6 +17,7 @@ public class StakeTests extends BaseTest {
         stakeSteps.getStakeKey(stakeKey)
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponse(StakeKeyModel.class);
+        stakeSteps.validateStakeAddress(stakeKeyModel, "stake");
     }
 
     @Test(description = "second test" , groups = {"stake"})
