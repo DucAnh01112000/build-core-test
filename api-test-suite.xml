@@ -5,8 +5,9 @@
     <test name="Test CardanoAPI">
         <method-selectors>
             <method-selector>
-                <script language="beanshell"><![CDATA[
-              import java.util.ArrayList;
+                <script language="beanshell">
+                    <![CDATA[
+                    import java.util.ArrayList;
 
                     String whatGroup = System.getProperty("cardanoAPI.group");
 
@@ -26,7 +27,8 @@
                         }
                     }
                     flag;
-       ]]></script>
+                ]]>
+                </script>
             </method-selector>
         </method-selectors>
         <classes>
