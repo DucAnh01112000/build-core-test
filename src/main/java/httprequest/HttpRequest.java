@@ -73,7 +73,8 @@ public class HttpRequest extends HttpRequestClientFactory{
         Response res = requestSpecification.contentType(ContentType.JSON).when().
                 get(url).
                 then().
-                log().everything().extract().response();
+                log().ifValidationFails()
+                .extract().response();
         setResponse(res);
         return res;
     }
