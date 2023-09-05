@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       api-group:
-        description: API_GROUPS
+        description: API_GROUPS (groups are separated by commas)
 jobs:
   build:
     runs-on: ubuntu-latest
