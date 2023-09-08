@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 08 08:23:23 GMT 2023","Fri Sep 08 08:23:23 GMT 2023","4","Suite CardanoAPI","Test CardanoAPI","tests.stake.StakeTests","tests.stake.StakeTests","secondTest","second test",""
+"broken","Fri Sep 08 08:22:21 GMT 2023","Fri Sep 08 08:23:23 GMT 2023","61307","Suite CardanoAPI","Test CardanoAPI","tests.tokens.TokenTest","tests.tokens.TokenTest","getToken","get a token with token id",""
+"broken","Fri Sep 08 08:22:21 GMT 2023","Fri Sep 08 08:23:23 GMT 2023","61311","Suite CardanoAPI","Test CardanoAPI","tests.stake.StakeTests","tests.stake.StakeTests","getStakeAddress","get stake with address",""
