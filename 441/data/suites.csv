@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Aug 17 08:24:28 GMT 2024","Sat Aug 17 08:25:29 GMT 2024","60856","Suite CardanoAPI","Test CardanoAPI","tests.stake.StakeTests","tests.stake.StakeTests","getStakeAddress","get stake with address",""
+"passed","Sat Aug 17 08:25:29 GMT 2024","Sat Aug 17 08:25:29 GMT 2024","1","Suite CardanoAPI","Test CardanoAPI","tests.stake.StakeTests","tests.stake.StakeTests","secondTest","second test",""
+"broken","Sat Aug 17 08:24:28 GMT 2024","Sat Aug 17 08:25:29 GMT 2024","60869","Suite CardanoAPI","Test CardanoAPI","tests.tokens.TokenTest","tests.tokens.TokenTest","getToken","get a token with token id",""
