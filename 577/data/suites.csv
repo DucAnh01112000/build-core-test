@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","60839","get a token with token id","Suite CardanoAPI","Tue Dec 31 08:28:37 GMT 2024","broken","Tue Dec 31 08:29:38 GMT 2024","tests.tokens.TokenTest","Test CardanoAPI","tests.tokens.TokenTest","getToken"
-"","0","second test","Suite CardanoAPI","Tue Dec 31 08:29:38 GMT 2024","passed","Tue Dec 31 08:29:38 GMT 2024","tests.stake.StakeTests","Test CardanoAPI","tests.stake.StakeTests","secondTest"
-"","60818","get stake with address","Suite CardanoAPI","Tue Dec 31 08:28:37 GMT 2024","broken","Tue Dec 31 08:29:38 GMT 2024","tests.stake.StakeTests","Test CardanoAPI","tests.stake.StakeTests","getStakeAddress"
